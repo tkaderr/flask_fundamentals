@@ -1,0 +1,18 @@
+*{
+  margin:0px;
+  padding:0px;
+}
+
+.farm, .casino, .cave, .house{
+  border:2px solid red;
+  display:inline-block;
+  width:200px;
+  text-align: center
+}
+.activities{
+  display:block;
+  width: 900px;
+  height:400px;
+  border: 2px solid red;
+  overflow: scroll;
+}

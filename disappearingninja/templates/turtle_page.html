@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    {% block content %}
+    {% if name=="blue" %}
+    <img src="../static/leonardo.jpg" alt="no image">
+    {% elif name=="orange" %}
+    <img src="../static/michelangelo.jpg" alt="no image">
+    {% elif name=="purple" %}
+    <img src="../static/donatello.jpg" alt="no image">
+    {% elif name=="red" %}
+    <img src="../static/raphael.jpg" alt="no image">
+    {% else %}
+    <img src="../static/notapril.jpg" alt="no image">
+    {% endif %}
+    {% endblock content %}
+  </body>
+</html>

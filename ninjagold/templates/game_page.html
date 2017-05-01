@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Coin Game</title>
+    <link rel="stylesheet" href="../static/game_page.css">
+  </head>
+  <body>
+
+
+    <h1>Your Gold: {{session["gold"]}}</h1>
+
+
+  <div class=farm>
+    <h4>Farm</h4>
+    <p>earn 10-20 gold</p>
+    <form action="/button" method="post">
+      <input type="submit" name="action" value="farm">
+    </form>
+  </div>
+
+  <div class="cave">
+    <h4>cave</h4>
+    <p>earn 5-10 gold</p>
+    <form action="/button" method="post">
+      <input type="submit" name="action" value="cave">
+    </form>
+  </div>
+
+  <div class="house">
+    <h4>house</h4>
+    <p>earn 2-5 gold</p>
+    <form action="/button" method="post">
+      <input type="submit" name="action" value="house">
+    </form>
+  </div>
+
+  <div class="casino">
+    <h4>casino</h4>
+    <p>earn/lose 0-50 gold</p>
+    <form action="/button" method="post">
+      <input type="submit" name="action" value="casino">
+    </form>
+  </div>
+<h3>Activities:</h3>
+<div class="activities">
+
+  {% for i in session["log"]: %}
+  <p>{{i}}</p>
+  {% endfor %}
+</div>
+
+  </body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>home page</title>
+  </head>
+  <body>
+    <h1>HI</h1>
+    <p>You have visited this page: {{session["counter"]}} time(s)</p>
+    <form action="/button" method="post">
+    <input type="submit" name="action" value="add2">
+    </form>
+    <form action="/button" method="post">
+    <input type="submit" name="action" value="reset">
+    </form>
+  </body>
+</html>
